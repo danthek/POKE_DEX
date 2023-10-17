@@ -15,16 +15,18 @@
 
 <body>
     <main class="flex">
-
+    
     </main>
     <template id="template-card">
         <article class="card">
+      
             <div class="card-top">
-            </div>
-            <div class="card-body">
+            
                 <div class="img-container">
                     <img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
                 </div>
+            </div>
+            <div class="card-body">
                 <h1 class="card-body-title">
                     Victor charst
                     <span>26</span>
@@ -34,19 +36,30 @@
             <div class="card-footer">
                 <div class="card-footer-social">
                     <h3>80K</h3>
-                    <p>Followers</p>
+                    <p>Type</p>
                 </div>
                 <div class="card-footer-social">
                     <h3>803K</h3>
-                    <p>Likes</p>
+                    <p>Abilitie</p>
                 </div>
                 <div class="card-footer-social">
                     <h3>1.4K</h3>
-                    <p>Photos</p>
+                    <p>Version</p>
                 </div>
             </div>
+        
         </article>
+        <div class="dataControl">
+            <button class="randomButton" onclick="window.location.reload()"><img  class="pokeBallImg"src="./images/pokeball_icon.png">Random Pokemon!</button>
+            <form action="/action_page.php" class="pokeINput">
+                <label for="fname">Pokemon name: </label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" class="pokeINput"  value="Search">
+              </form>
+        </div>
     </template>
+   
+
     <script src="./js/app.js"></script>
 </body>
 
