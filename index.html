@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Pokemon</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+ 
+
+            
+    <main class="flex">
+   
+    </main>
+
+    <template id="template-card">
+        <article class="card">
+      
+            <div class="card-top">
+            
+                <div class="img-container">
+                    <img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
+                </div>
+            </div>
+            <div class="card-body">
+                <h1 class="card-body-title">
+                    Victor charst
+                    <span>26</span>
+                </h1>
+                <p class="card-body-text">London</p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-specs">
+                    <h3>80K</h3>
+                    <p>Type</p>
+                </div>
+                <div class="card-footer-specs">
+                    <h3>803K</h3>
+                    <p>Abilitie</p>
+                </div>
+                <div class="card-footer-specs">
+                    <h3>1.4K</h3>
+                    <p>Version</p>
+                </div>
+            </div>
+        
+        </article>
+        <div class="dataControl">
+            <!-- <button class="randomButton" onclick="window.location.reload()"><img  class="pokeBallImg"src="./images/pokeball_icon.png">Random Pokemon!</button> -->
+            <button class="randomButton" onclick=" mostrarCard()"><img  class="pokeBallImg"src="./images/pokeball_icon.png">Random Pokemon!</button>
+            <form class="pokeINput">
+                <label for="fname">Pokemon name:&nbsp</label>
+                <input type="text" id="pokemonName" name="fname"><br><br>
+                <button id="searchBtn"class="pokeSearch" type="button" value="Search" onclick=" searchedPokemon(document.getElementById('pokemonName').value)">Search</button>
+              </form>
+        </div>
+    </template>
+    
+    <div class="row">
+        <p>This webpage was created for the purpose of delivering a Javascript Fundamentals proyect by <span style="color:#565656 ">Abraham Delgado. </span>     
+          No copyrights here.
+          <br>
+            This webpage is for you! So go and search some Pokemons and have fun.
+        </p>
+        <p>Build with ❤️ in the beautiful city of Colima, México, 2023.</p>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
